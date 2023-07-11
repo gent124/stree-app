@@ -1,1 +1,45 @@
-<p>register works!</p>
+    <script src="bower_components/zxcvbn/dist/zxcvbn.js"></script>
+<div class="container mt-4">
+  <h1>Register to Stree</h1>
+  <form *ngIf="registerForm" [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" class="form-control" id="fullName" formControlName="fullName" placeholder="Full Name" required>
+      <div *ngIf="registerForm.get('fullName')?.invalid && registerForm.get('fullName')?.touched" class="text-danger">
+        Full Name is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email" required>
+      <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="text-danger">
+        Please enter a valid email address.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" class="form-control" id="mobile" formControlName="mobile" placeholder="Mobile Number" required>
+      <div *ngIf="registerForm.get('mobile')?.invalid && registerForm.get('mobile')?.touched" class="text-danger">
+        Mobile number must be a number at least 9 characters long.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div class="input-group">
+        <input type="password" class="form-control" id="password" formControlName="password" required>
+      </div>
+      <div class="password-strength-meter mt-1">
+        <div class="progress">
+          <div class="progress-bar bar-1" [ngClass]="getPasswordStrengthColor(0)" [style.width.%]="25" [hidden]="getPasswordStrength() < 1"></div>
+          <div class="progress-bar bar-2" [ngClass]="getPasswordStrengthColor(1)" [style.width.%]="25" [hidden]="getPasswordStrength() < 2"></div>
+          <div class="progress-bar bar-3" [ngClass]="getPasswordStrengthColor(2)" [style.width.%]="25" [hidden]="getPasswordStrength() < 3"></div>
+          <div class="progress-bar bar-4" [ngClass]="getPasswordStrengthColor(3)" [style.width.%]="25" [hidden]="getPasswordStrength() < 4"></div>
+        </div>
+      </div>      
+      <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched" class="text-danger">
+        Password must be at least 9 characters long.
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>
+  </form>
+</div>

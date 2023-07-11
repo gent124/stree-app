@@ -1,0 +1,34 @@
+.bg-pink {
+    background-color: red;
+}
+
+.bg-pink {
+    background-color: red;
+}
+
+.progress {
+    display: flex;
+  }
+  
+  .progress-bar {
+    /* height: 10px; */
+    margin-right: 5px;
+    border-radius: 4px;
+  }
+  
+  .bar-1 {
+    background-color: #ff7f7f;
+  }
+  
+  .bar-2 {
+    background-color: #ffa07f;
+  }
+  
+  .bar-3 {
+    background-color: #ffd97f;
+  }
+  
+  .bar-4 {
+    background-color: #baff7f;
+  }
+  

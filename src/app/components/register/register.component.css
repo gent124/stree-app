@@ -1,34 +1,90 @@
-.bg-pink {
-    background-color: red;
+body {
+  font-family: 'Poppins' !important;
+  height: 100%;
+}
+
+h1 {
+  margin-top:42px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .bg-pink {
-    background-color: red;
+    background-color: #FF003D;
+}
+
+.bg-pink {
+    background-color: #FF003D;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  color: black;
+}
+
+:focus {
+  outline: none;
+box-shadow: none;
 }
 
 .progress {
     display: flex;
+    /* justify-content: flex-start; */
+    width: 19%;
+    height: 9px;
+    border-radius: 0;
   }
   
   .progress-bar {
     /* height: 10px; */
-    margin-right: 5px;
-    border-radius: 4px;
+    /* margin-right: 5px; */
+    /* border-radius: 4px; */
+    background-color: #FF003D;
+    border-radius: 0;
   }
   
-  .bar-1 {
-    background-color: #ff7f7f;
-  }
   
-  .bar-2 {
-    background-color: #ffa07f;
+  .btn {
+    margin: 35px auto;
+    background-color: #FF003D;
+    width: 84%;
+    border-color: #FF003D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-  
-  .bar-3 {
-    background-color: #ffd97f;
+
+
+  .mt-1 {
+    display: flex;
+    /* padding: 10px; */
+    justify-content: space-between;
+    margin-top: 15px
+
   }
-  
-  .bar-4 {
-    background-color: #baff7f;
-  }
-  
+
+
+.mt-1 {
+  margin: 10px
+}
+
+.footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.pink {
+  color: #FF003D;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

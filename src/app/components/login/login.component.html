@@ -1,41 +1,24 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <h2>Registration Form</h2>
-        <form [formGroup]="registerForm" (ngSubmit)="register()">
-          <div class="form-floating">
-            <input type="text" id="name" class="form-control mat-input" formControlName="name">
-            <label for="name" class="mat-label">Name</label>
-            <div *ngIf="registerForm.get('name').errors && registerForm.get('name').touched" class="text-danger">
-              Name is required.
-            </div>
-          </div>
-          <div class="form-floating">
-            <input type="email" id="email" class="form-control mat-input" formControlName="email">
-            <label for="email" class="mat-label">Email</label>
-            <div *ngIf="registerForm.get('email').errors && registerForm.get('email').touched" class="text-danger">
-              Email is required and must be a valid email address.
-            </div>
-          </div>
-          <div class="form-floating">
-            <input type="password" id="password" class="form-control mat-input" formControlName="password">
-            <label for="password" class="mat-label">Password</label>
-            <div *ngIf="registerForm.get('password').errors && registerForm.get('password').touched" class="text-danger">
-              Password is required.
-            </div>
-          </div>
-          <div class="form-floating">
-            <input type="text" id="phoneNumber" class="form-control mat-input" formControlName="phoneNumber">
-            <label for="phoneNumber" class="mat-label">Phone Number</label>
-            <div *ngIf="registerForm.get('phoneNumber').errors && registerForm.get('phoneNumber').touched" class="text-danger">
-              Phone Number is required.
-            </div>
-          </div>
-          <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary">Register</button>
-          </div>
-        </form>
-      </div>
+
+  <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
+
+
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="email" formControlName="email" placeholder="Email"  required>
+    <label for="email">Email</label>
+    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-danger">
+      Full Name is required and must be text.
     </div>
-  </div>
-  
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="password" formControlName="password" placeholder="Password" required>
+      <label for="password">Password</label>
+      <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-danger">
+        Full Name is required and must be text.
+      </div>
+      </div>
+    <button type="submit" class="btn">Register</button>
+
+      </form>
+</div>

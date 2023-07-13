@@ -1,5 +1,7 @@
 <script src="bower_components/zxcvbn/dist/zxcvbn.js"></script>
-
+<div class="logo">
+  <img src="../../../assets/arrow-prev-svgrepo-com.svg"  [routerLink]="['/']">
+</div>
 <div class="container">
   <h1><strong>Register to Stree</strong></h1>
 
@@ -68,9 +70,10 @@
         </div>
     </div>
 
-    <button type="submit" class="btn">Register</button>
+    <button type="submit" class="btn" [disabled]="registerForm.invalid">Register</button>
   </form>
 </div>
+
 <div class="footer">
   <p>By registering you agree to <span class="pink">Terms & Conditions</span> and <span class="pink">Privacy Policy</span> of Stree</p>
 </div>

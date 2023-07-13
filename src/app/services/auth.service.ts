@@ -1,17 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
+import { LOCAL_STORAGE, StorageService } from 'ngx-webstorage-service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor() { }
+  constructor(@Inject(LOCAL_STORAGE) private localStorage: StorageService) { }
 
 
   validateLogin(email: string, password: string): boolean {
+    console.log(email, password);
+    const users = this.localStorage.get('form-data'|| '[]');
 
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const user = users.find((u: any) => u.email === email && u.password === password);
+    console.log(users);
+    const user = users.find((user: any) => user.email === email && user.password === password);
 
     return !!user;
 

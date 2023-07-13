@@ -1,26 +1,22 @@
+html, body {
+  font-family: 'Poppins' !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden !important;
+}
+
 .container {
     max-width: 500px;
     margin: 0 auto;
   }
-  
-  h2 {
-    text-align: center;
+
+  :focus {
+    outline: none;
+  box-shadow: none;
   }
-  
-  .mat-form-field {
-    width: 100%;
-    margin-bottom: 15px;
-    margin: 40px;
-  }
-  
-  .mat-input-element {
-    font-size: 14px;
-  }
-  
-  .mat-error {
-    font-size: 12px;
-    color: red;
-  }
+
   
   .text-center {
     text-align: center;
@@ -30,4 +26,82 @@
     margin-top: 15px;
   }
   
+  input {
+    border-radius: 0;
+    border: 0;
+    margin-top: 7px;
+    width: 432px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    color: black;
   
+  }
+
+  .btn {
+    background-color: #FF003D;
+    margin-left: 3%;
+    width: 93%;
+    height: 48.3px;
+    border-color: #FF003D;
+    color: white;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  button:disabled,
+button[disabled] {
+  background-color: rgba(218, 211, 212, 1);
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ border:0 ;
+}
+
+
+  .mt-1 {
+    display: flex;
+    /* padding: 10px; */
+    justify-content: space-between;
+    margin-top: 15px
+
+  }
+
+  label {
+    font-size: 21px;
+  
+    color: rgba(0,0,0, 0.5);
+  }
+
+
+.pink {
+  color: #FF003D;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.forgotPassword {
+  padding-top: 10px;
+  padding-right:4px ;
+  float: right;
+}
+
+.form-floating {
+  margin-left: 15px;
+  padding-bottom: 3%;
+  /* padding: 17%; */
+
+}
+
+.footer {
+  flex-shrink: 0;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5%; 
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(195, 195, 195, 1);
+}

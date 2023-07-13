@@ -11,6 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 
 })
 export class LoginComponent implements OnInit{
+  canLogin : boolean = false;
   loginForm!: any;
 
 
@@ -30,11 +31,15 @@ export class LoginComponent implements OnInit{
     if (this.loginForm.valid) {
       const email = this.loginForm.get('email').value;
       const password = this.loginForm.get('password').value;
-      this.authService.validateLogin(email, password);
-      // Handle registration logic here
+      console.log(email, password);
+    this.canLogin =  this.authService.validateLogin(email, password);
+    console.log(this.canLogin);
+      
+  }
+    console.log(this.canLogin);
+    if(this.canLogin) {
+      this.router.navigate(['/home']);
     }
-  this.router.navigate(['/home'])
-
   }
 
 

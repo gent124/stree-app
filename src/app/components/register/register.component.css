@@ -1,12 +1,28 @@
-body {
+html, body {
   font-family: 'Poppins' !important;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden !important;
 }
 
+img {
+  padding-left: 9.3px;
+  padding-top: 100px;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
 h1 {
-  margin-top:42px;
+  margin-left: 27px;
+  padding-top: 40px;
   font-size: 36px;
-  margin-bottom: 10px;
+  padding-bottom: 3%;
+  font-weight: 600;
+  font-family: Poppins;
+  line-height: 54px;
 }
 
 .bg-pink {
@@ -17,10 +33,36 @@ h1 {
     background-color: #FF003D;
 }
 
+.form-floating {
+  margin-left: 30px;
+  padding-bottom: 3%;
+  /* padding: 17%; */
+
+}
 input {
-  border: none;
+  border-radius: 0;
+  border: 0;
+  margin-top: 7px;
+  width: 432px;
   border-bottom: 1px solid rgba(0,0,0,0.5);
   color: black;
+
+}
+
+input:last-child {
+  padding-bottom: 0% !important;
+}
+
+label {
+  font-size: 21px;
+
+  color: rgba(0,0,0, 0.5);
+}
+
+input:active {
+  outline: none;
+box-shadow: none;
+
 }
 
 :focus {
@@ -30,7 +72,7 @@ box-shadow: none;
 
 .progress {
     display: flex;
-    /* justify-content: flex-start; */
+  background-color: rgba(204, 204, 204, 1);
     width: 19%;
     height: 9px;
     border-radius: 0;
@@ -46,38 +88,55 @@ box-shadow: none;
   
   
   .btn {
-    margin: 35px auto;
     background-color: #FF003D;
-    width: 84%;
+    margin-left: 7%;
+    width: 91%;
+    height: 48.3px;
     border-color: #FF003D;
     color: white;
-    display: flex;
     justify-content: center;
-    align-items: center;
-
+    padding-left: 8%;
+    padding-right: 8%;
   }
+
+  button:disabled,
+button[disabled] {
+  background-color: rgba(218, 211, 212, 1);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   border:0 ;
+}
 
 
   .mt-1 {
+    width: 96%;
     display: flex;
-    /* padding: 10px; */
     justify-content: space-between;
-    margin-top: 15px
+    margin-top: 15px;
+    padding-top: 11px;
+  }
+
+  .footer {
+    flex-shrink: 0;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    font-size: 16;
+    font-family: Poppins;
+    color: rgba(0, 0, 0, 1);
 
   }
 
+/* @media (max-width: 350px) {
+  .footer {
+    flex-shrink: 0;
+    position: relative;
+    justify-content: center;
+    width: 100%;
 
-.mt-1 {
-  margin: 10px
-}
-
-.footer {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
+  }
+} */
 
 .pink {
   color: #FF003D;
@@ -88,3 +147,4 @@ form {
   flex-direction: column;
   justify-content: flex-start;
 }
+

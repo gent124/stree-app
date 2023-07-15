@@ -11,7 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 
 })
 export class LoginComponent implements OnInit{
-  canLogin : boolean = false;
+  canLogin : boolean = true;
   loginForm!: any;
 
 
@@ -37,8 +37,11 @@ export class LoginComponent implements OnInit{
       
   }
     console.log(this.canLogin);
+
     if(this.canLogin) {
       this.router.navigate(['/home']);
+    }else {
+      this.loginForm.reset();
     }
   }
 

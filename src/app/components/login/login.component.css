@@ -7,73 +7,91 @@ html, body {
   overflow: hidden !important;
 }
 
+* {
+  overflow: hidden;
+}
+
+img {
+  margin: 0 auto;
+  margin-top: 237px;
+}
+
 .container {
-    max-width: 500px;
-    margin: 0 auto;
-  }
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 158px;
+}
 
-  :focus {
-    outline: none;
+:focus {
+  outline: none;
   box-shadow: none;
-  }
+}
 
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .mt-3 {
-    margin-top: 15px;
-  }
-  
-  input {
-    border-radius: 0;
-    border: 0;
-    margin-top: 7px;
-    width: 432px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    color: black;
-  
-  }
-
-  .btn {
-    background-color: #FF003D;
-    margin-left: 3%;
-    width: 93%;
-    height: 48.3px;
-    border-color: #FF003D;
-    color: white;
-    justify-content: center;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  button:disabled,
-button[disabled] {
-  background-color: rgba(218, 211, 212, 1);
- box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
- border:0 ;
+.wrong-creds {
+  font-size: 17px;
+  /* padding-left: 25px; */
+  padding-bottom: 15px;
+  /* text-align: center; */
 }
 
 
-  .mt-1 {
-    display: flex;
-    /* padding: 10px; */
-    justify-content: space-between;
-    margin-top: 15px
+.text-center {
+  text-align: center;
+}
 
-  }
+.mt-3 {
+  margin-top: 15px;
+}
 
-  label {
-    font-size: 21px;
-  
-    color: rgba(0,0,0, 0.5);
-  }
+input {
+  border-radius: 0;
+  border: 0;
+  margin-top: 7px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: black;
+
+}
+
+.btn {
+  color: white;
+  /* margin-left: 30px; */
+  width: 100%;
+  height: 54.67px;
+  background: #FF003D;
+  border-radius: 7px;
+  margin-top: 15px;
+
+}
+
+button:disabled,
+button[disabled] {
+  width: 100%;
+  height: 54.67px;
+  background: #D9D9D9;
+  border-radius: 7px;
+}
+
+
+.mt-1 {
+  display: flex;
+  /* padding: 10px; */
+  justify-content: space-between;
+  margin-top: 15px
+}
+
+label {
+  font-size: 21px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
 
 
 .pink {
+  color: rgba(253, 58, 128, 255);
+  font-size: 18px;
   cursor: pointer;
-  color: #FF003D;
+  font-weight: 500;
 }
 
 form {
@@ -83,26 +101,23 @@ form {
 }
 
 .forgotPassword {
-  padding-top: 10px;
-  padding-right:4px ;
+  padding-top: 20px;
   float: right;
 }
 
 .form-floating {
-  margin-left: 15px;
-  padding-bottom: 3%;
-  /* padding: 17%; */
+  margin-top: 27px;
 
 }
 
 .footer {
-  flex-shrink: 0;
   position: relative;
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 5%; 
+  padding: 5%;
   font-size: 18px;
   font-weight: 500;
   color: rgba(195, 195, 195, 1);
+  margin-top: 12px;
 }

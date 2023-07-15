@@ -1,11 +1,12 @@
 <script src="bower_components/zxcvbn/dist/zxcvbn.js"></script>
-<div class="logo">
-  <img src="../../../assets/arrow-prev-svgrepo-com.svg"  [routerLink]="['/']">
-</div>
+
 <div class="container">
+  <div class="logo">
+    <img src="../../../assets/arrow-prev-svgrepo-com.svg"  [routerLink]="['/']">
+  </div>
+
   <h1><strong>Register to Stree</strong></h1>
-
-
+  
   <form *ngIf="registerForm" [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
 
     <div class="form-floating mb-3">

@@ -1,12 +1,16 @@
-
+<div class="logo">
+  <img src="../../../assets//stree.logo.svg" />
+</div>
 <div class="container">
+  <div *ngIf="!canLogin" class="text-danger wrong-creds">You have entered an invalid email or password </div>
+
 
   <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
 
 
   <div class="form-floating mb-3">
     <input type="text" class="form-control" id="email" formControlName="email" placeholder="Email"  required>
-    <label for="email">Email</label>
+    <label for="email">Email ID</label>
     <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-danger">
       Please enter a valid email address.
     </div>

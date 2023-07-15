@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Poppins' !important;
+  /* font-family: 'Poppins' !important; */
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,8 +8,9 @@ html, body {
 }
 
 img {
-  padding-left: 9.3px;
-  padding-top: 100px;
+  padding-left: 6%;
+  padding-top: 70px;
+  cursor: pointer;
 }
 .container {
   max-width: 500px;
@@ -17,11 +18,10 @@ img {
 }
 h1 {
   margin-left: 27px;
-  padding-top: 40px;
-  font-size: 36px;
-  padding-bottom: 3%;
+  padding-top: 24px;
+  font-size: 40px;
   font-weight: 600;
-  font-family: Poppins;
+  font-family: 'Poppins';
   line-height: 54px;
 }
 
@@ -35,10 +35,11 @@ h1 {
 
 .form-floating {
   margin-left: 30px;
-  padding-bottom: 3%;
-  /* padding: 17%; */
-
+  /* padding-bottom: 3%; */
+  margin-top: 27px;
 }
+
+
 input {
   border-radius: 0;
   border: 0;
@@ -50,7 +51,7 @@ input {
 }
 
 input:last-child {
-  padding-bottom: 0% !important;
+  /* padding-bottom: 0% !important; */
 }
 
 label {
@@ -91,18 +92,19 @@ box-shadow: none;
     background-color: #FF003D;
     margin-left: 7%;
     width: 91%;
-    height: 48.3px;
+    height: 54px;
     border-color: #FF003D;
     color: white;
     justify-content: center;
     padding-left: 8%;
     padding-right: 8%;
+    font-size: 21px;
   }
 
   button:disabled,
 button[disabled] {
-  background-color: rgba(218, 211, 212, 1);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: rgba(204, 204, 204, 1);
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.25);
    border:0 ;
 }
 
@@ -116,14 +118,12 @@ button[disabled] {
   }
 
   .footer {
-    flex-shrink: 0;
     position: relative;
     justify-content: center;
     width: 100%;
     text-align: center;
     padding: 5%;
-    font-size: 16;
-    font-family: Poppins;
+    padding-top: 34px;
     color: rgba(0, 0, 0, 1);
 
   }
@@ -137,14 +137,21 @@ button[disabled] {
 
   }
 } */
-
 .pink {
   color: #FF003D;
+  cursor: default;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  
 }
 
+
+p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}

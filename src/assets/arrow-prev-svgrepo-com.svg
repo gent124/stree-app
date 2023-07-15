@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#0F0F0F"/>
+<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="0.370361" y="0.594116" width="57.2594" height="57.2594" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_59_157" transform="scale(0.0078125)"/>
+</pattern>
+<image id="image0_59_157" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAB90lEQVR4nO3dzapOUQDG8T8xxUn5qFPqGMjQxFTGrsL9KJdgwtAEuRLFCCkiFyAfOQZSSHK2/b4r1u9Xe/7U87TX7h2stwAAAAAAAAAAAAAAAABms1MdHR2C7TpR3azeVvvV++phdXlkKLZjr3ra1+J/fj5W18dFY9P2qhf9uvzvR+BN8B/6k/K/PQ8GZWRDDlL+fvWuOjIkKas7aPnfnmMjwrKupeW/HhGWdS0tf7+6MSAvK/qb8p9Wx7cfmbWcq561rPwX1fntR2Ytyp+Y8iem/Ikpf2LKn5jyJ6b8iSl/YsqfmPInpvyJKX9iyp+Y8iem/Ikpf2LKn5jyJ6b8iSl/YsqfmPInpvyJnamet7z8ve1HZk13U/60zlaf89qf1rWUv7rDowMcwKHRARhrt+VHgPP/P3E/H4FT261eZQRTu1C9zA9BUzMCjAAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgIyAjICMgI6C62Ne/f10ygmfVzvYjs7a/GcGdAXnZgKXHwYfq5IC8bMDSN8GVEWGX+JfuBxjhcXW1ejM6CGMd5Dj4WB0bE5NN+tMR3BoVkM272O/vJ3hSnRqWjq3Yre7143U1n6rb1emBuRZx8dJyZ6tL1bvqUfV2bBwAAAAAAAAAAAAAAABgHl8ACDL4UDFlExAAAAAASUVORK5CYII="/>
+</defs>
 </svg>
